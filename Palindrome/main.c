@@ -1,3 +1,8 @@
+/***************************************************
+ * Program: Trivial program to print hello-universe
+ * Author: Komala 
+ **************************************************/
+
 #include<stdio.h>
 #include <string.h>
 int main()
