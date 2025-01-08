@@ -1,51 +1,59 @@
 /***************************************************
- * Program: Trivial program to print hello-universe
+ * Program: Basic program to show the utilization of 
+ * Relational operators using if-else statement. 
  * Author: Komala 
  **************************************************/
-// Relational operators in c language
 
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-    int a, b;
-    printf("Enter two numbers a and b respectively\n");
-    scanf("%d%d",&a,&b);
-    // Greater than operator
-    if (a>b)
-        printf("a is greater than b\n");
-    else
-        printf("a is smaller than b\n");
+	int num1, num2;
+	printf("Enter two numbers: \n");
+	scanf("%d %d",&num1,&num2);
 
-    // Greater than equal to
-    if (a>=b)
-        printf("a is greater than equal to b\n");
-    else
-        printf("a is not greater than equal to b\n");
+	/* Greater than operator */
+	printf("\n(>) operation:\n");
+	if (num1>num2)
+		printf("num1(%d) is greater than num2(%d)\n", num1,num2);
+	else
+		printf("num1(%d) is smaller than num2(%d)\n", num1,num2);
 
-    //Less than
-    if (a<b)
-        printf("a is less than b\n");
-    else
-        printf("a is greater than b\n");
+	/* Greater than or equal to */
+	printf("\n(>=) operation:\n");
+	if (num1>=num2)
+		printf("num1(%d) is greater than or equal to num2(%d)\n", num1,num2);
+	else
+		printf("num1(%d) is neither greater than or equal to num2(%d)\n", num1,num2);
 
-    //Lesser than equal to
-    if (a<=b)
-        printf("a is less than equal to b\n");
-    else
-        printf("a is greater than equal to b\n");
+	/* Less than */
+	printf("\n(<) operation:\n");
+	if (num1<num2)
+		printf("num1(%d) is less than num2(%d)\n", num1,num2);
+	else
+		printf("num1(%d) is greater than num2(%d)\n", num1,num2);
 
-    //equal to
-    if (a==b)
-        printf("a is equal to b\n");
-    else
-        printf("a is not equal to b\n");
+	/* Lesser than equal to */
+	printf("\n(<=) operation:\n");
+	if (num1<=num2)
+		printf("num1(%d) is neither less than or equal to num2(%d)\n", num1,num2);
+	else
+		printf("num2(%d) is greater than num1(%d)\n", num1,num2);
 
-    //not equal to
-    if (a!=b)
-        printf("a is not equal to b\n");
-    else
-        printf("a is equal to b\n");
+	/* equal to */
+	printf("\n(==) operation:\n");
+	if (num1==num2)
+		printf("num1(%d) is equal to num2(%d)\n", num1,num2);
+	else
+		printf("num1(%d) is not equal to num2(%d)\n", num1,num2);
 
-    return 0;
+	/* not equal to */
+	printf("\n(!=) operation:\n");
+	if (num1!=num2)
+		printf("Condition true,num1(%d) is not equal to num2(%d)\n", num1,num2);
+	else
+		printf("Condition fails,num1(%d) is equal to num2(%d)\n", num1,num2);
+
+	return 0;
 
 }
