@@ -3,8 +3,8 @@
  * Author: Komala 
  ****************************************************************/
 
-#include<stdio.h>
-#include<ctype.h>     /* tolower() */
+#include <stdio.h>
+#include <ctype.h>     /* tolower() */
 #include <conio.h>    /* getchar() */
 
 int main() 
