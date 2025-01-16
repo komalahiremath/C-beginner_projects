@@ -8,3 +8,5 @@
 2. swap_2numbers
 3. hollow_box
 4. Ternary_operator
+5. Palindrome
+6. Pointer
